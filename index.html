@@ -29,7 +29,7 @@
 <body>
  
 <script>
-if (window.matchMedia('(display-mode: minimal-ui)').matches) {
+if (window.matchMedia('(display-mode: fullscreen)').matches || window.matchMedia('(display-mode: minimal-ui)').matches) {
   location.replace("https://www.xbox.com/play");
 } else {
     document.write("Add/install this page!");
