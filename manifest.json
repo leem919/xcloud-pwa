@@ -1,7 +1,7 @@
 {
     "theme_color": "#067D06",
     "background_color": "#067D06",
-    "display": "minimal-ui",
+    "display": "fullscreen",
     "id": "/xcloud-pwa/",
     "start_url": "/xcloud-pwa/",
     "name": "Xbox Cloud Gaming",
