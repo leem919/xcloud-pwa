@@ -29,9 +29,7 @@
 <body>
  
 <script>
-if (window.matchMedia('(display-mode: minimal-ui)').matches) {
-  location.replace("https://www.xbox.com/play");
-} else if (window.matchMedia('(display-mode: fullscreen)').matches) {
+if (window.matchMedia('(display-mode: standalone)').matches) {
   location.replace("https://www.xbox.com/play");
 }
 else {
