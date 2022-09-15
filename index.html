@@ -26,10 +26,14 @@
         href="manifest.json">
 </head>
  
-<body>
- 
+<body text="white" style="background-color:black;">
+   <div id="loadingicon" style="position:absolute; width:98%; height:92%; display: flex; align-items: center; justify-content: center;">
+</div>
+
+
 <script>
 if (window.matchMedia('(display-mode: standalone)').matches) {
+  document.getElementById('loadingicon').innerHTML = '<img src="/icons/loading.gif" height="12%">';
   location.replace("https://www.xbox.com/play");
 }
 else {
