@@ -1,3 +1,4 @@
+As of 9/29/22, I've noticed that Microsoft made their xcloud pwa available for more platforms now, and that this pwa is probably useless. However, I choose to continue working on it simply because I want to make mine look good and integrate better with androids.
 # xcloud-pwa
 For non-apple mobiles
 
