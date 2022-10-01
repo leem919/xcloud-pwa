@@ -1,10 +1,10 @@
 var staticCacheName = "pwa";
-const update = 25;
+const update = 26;
 
 self.addEventListener("install", function (e) {
 e.waitUntil(
 	caches.open(staticCacheName).then(function (cache) {
-	return cache.addAll(["/xcloud-pwa"]);
+	return cache.addAll(["/xcloud-pwa", "/xcloud-pwa/offline.html", "/xcloud-pwa/icons/loading.gif", "/xcloud-pwa/icons/offlinebanner.png"]);
 	})
 );
 });

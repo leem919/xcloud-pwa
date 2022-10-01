@@ -32,12 +32,29 @@
 
 
 <script>
+function isOnline(cb){
+    var img = new Image();
+    img.onerror = function() {
+        cb(false)
+    }
+    img.onload = function() {
+        cb(true)
+    }
+    img.src = "/xcloud-pwa/icons/test.bmp?t=" + (+new Date);
+}
+
 if (window.matchMedia('(display-mode: standalone)').matches) {
-  document.getElementById('loadingicon').innerHTML = '<img src="/xcloud-pwa/icons/loading.gif" height="12%">';
+  isOnline(function(res){
+    if (res) {
+        document.getElementById('loadingicon').innerHTML = '<img src="/xcloud-pwa/icons/loading.gif" height="12%">';
   location.replace("https://www.xbox.com/play");
+    } else {
+  location.replace("xcloud-pwa/offline.html");
+    }
+});
 }
 else {
-    document.write("This is my host page for the xcloud pwa, you should receive some kind of prompt to add or install the app. If not, try your browser's functionality to add this page to the homescreen or install it as an app.");
+    document.write("Add/install this page!");
 }
     </script>
 
@@ -52,7 +69,7 @@ else {
         try {
           await navigator
                 .serviceWorker
-                .register('/xcloud-pwa/serviceworker.js');
+                .register('/xcloud-pwa/serviceworker.js', {scope: '/xcloud-pwa'});
         }
         catch (e) {
           console.log('SW registration failed');
