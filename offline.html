@@ -33,5 +33,24 @@
 <div id="offlinebanner" style="position:absolute; width:96%; height:98%; display: flex; align-items: center; justify-content: center;">
 <img src="/xcloud-pwa/icons/offlinebanner.png" height="53%">
 </div>
+
+<script>
+      isOnline();
+function isOnline(cb){
+    var img = new Image();
+    img.onerror = function() {
+  console.log("still offline");
+  setTimeout(isOnline, 5000);
+    }
+    img.onload = function() {
+  clearTimeout(isOnline)
+  console.log("back online!")
+  location.replace("index.html");
+    }
+    img.src = "/xcloud-pwa/icons/test.bmp?t=" + (+new Date);
+
+};
+</script>
+
 </body>
 </html>
