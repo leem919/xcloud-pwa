@@ -69,7 +69,7 @@ else {
         try {
           await navigator
                 .serviceWorker
-                .register('/xcloud-pwa/serviceworker.js', {scope: '/xcloud-pwa'});
+                .register('/xcloud-pwa/serviceworker.js', {scope: '/xcloud-pwa/'});
         }
         catch (e) {
           console.log('SW registration failed');
