@@ -6,7 +6,7 @@
     "start_url": "/xcloud-pwa/",
     "name": "Xbox Cloud Gaming",
     "short_name": "Cloud Gaming",
-    "description": "PWA for non-apple mobiles",
+    "description": "Wrapper for xcloud",
     "icons": [
         {
             "src": "icons/icon-192x192.png",
