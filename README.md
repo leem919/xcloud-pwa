@@ -1,8 +1,10 @@
+I am no longer developing this as Better xCloud is the best option for a better user experience and the official PWA has been available on all platforms for some time. I will keep the code up and unarchived.
+
 # Xbox Cloud Gaming PWA
 Wrapper for xcloud
 
-Originally I made this project because the official PWA wasn't avaiable for android mobile devices, only iPhones and iPads. However that's not the case anymore, so now I'm mainly maintaining this PWA because it's a fun project to try to improve, and I would like to do the best I can to make the user experience better.
+This was originally made because the official PWA wasn't avaiable for android mobile devices, only iPhones and iPads. It became a small attempt at improving upon some of the functionality.
 
-After testing the PWA with several mobile browsers, I find that installing it through the Samsung Internet Browser seems to be the best for its functionality, but Google Chrome is also close second. No other mobile browsers currently have proper PWA support, so you'll want to use one of the two I mentioned.
+After testing this PWA with several mobile browsers, I've determined that installing it through the Samsung Internet Browser seems to be the best for its functionality, but Google Chrome is a close second. No other mobile browsers currently have proper PWA support, so you have to use one of those two to properly install this.
 # Install
-The app is live at https://leem919.github.io/xcloud-pwa/ for you to install and try out.
+The app is live at https://leem919.github.io/xcloud-pwa/ to install.
