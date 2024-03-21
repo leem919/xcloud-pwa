@@ -1,4 +1,4 @@
-I am no longer developing this as Better xCloud is the best option for a better user experience and the official PWA has been available on all platforms for some time. I will keep the code up and unarchived.
+I am no longer developing this as [Better xCloud](https://github.com/redphx/better-xcloud) is the best option for a better user experience and the official PWA has been available on all platforms for some time. I will keep the code up and unarchived.
 
 # Xbox Cloud Gaming PWA
 Wrapper for xcloud
